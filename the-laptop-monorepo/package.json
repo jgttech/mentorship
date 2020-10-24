@@ -1,0 +1,12 @@
+{
+  "name": "the-laptop-monorepo",
+  "version": "1.0.0",
+  "description": "Epstein Didn't Kill Himself",
+  "main": "index.js",
+  "author": "Hunter Biden's Laptop",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
