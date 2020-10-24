@@ -6,6 +6,19 @@
   "author": "Hunter Biden's Laptop",
   "license": "ISC",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "src/*"
+  ],
+  "scripts": {
+    "bootstrap": "npx lerna bootstrap",
+    "clean": "run-s clean:projects clean:lerna clean:monorepo",
+    "clean:projects": "npx lerna run clean",
+    "clean:lerna": "npx lerna clean --yes",
+    "clean:monorepo": "rimraf node_modules",
+    "refresh": "run-s clean bootstrap"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
